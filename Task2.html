@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 40px;
+            color: #ffffff;
+            font-size: 48px;
+            letter-spacing: 4px;
+            padding: 40px;
+        }
+
+        body {
+            background: #3657b3;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .container {
+            width: 700px;
+            margin: 40px auto 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 150px);
+            gap: 15px;
+        }
+
+        .item {
+            border-radius: 8px;
+        }
+
+        .green {
+            background: #4f72cc;
+        }
+
+        .yellow {
+            background: #f7b733;
+        }
+
+        .red {
+            background: #ff4b5c;
+        }
+
+        .item1 {
+            background: #66cc4f;
+            grid-column: 1 / 2;
+            grid-row: 1 / 4;
+        }
+
+        .item2 {
+            background: #66cc4f;
+            grid-column: 2 / 4;
+            grid-row: 1 / 2;
+        }
+
+        .item3 {
+            background: #ff4b5c;
+            grid-column: 4 / 5;
+            grid-row: 1 / 2;
+        }
+
+        .item4 {
+            background: #f7b733;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        .item5 {
+            background: #ff4b5c;
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+
+        .item6 {
+            background: #66cc4f;
+            grid-column: 4 / 5;
+            grid-row: 2 / 4;
+        }
+
+        .item7 {
+            background: #ff4b5c;
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+
+        .item8 {
+            background: #f7b733;
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+
+        @media (max-width: 600px) {
+
+    .container {
+        width: 90%; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;   
+    }
+
+    .item1,
+    .item2,
+    .item3,
+    .item4,
+    .item5,
+    .item6,
+    .item7,
+    .item8 {
+        grid-column: 1 / 2;   
+        grid-row: auto;       
+        height: 80px;         
+    }
+}
+    </style>
+</head>
+
+<body>
+    <h1>Task 2</h1>
+    <div class="container">
+
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+        <div class="item item6"></div>
+        <div class="item item7"></div>
+        <div class="item item8"></div>
+
+    </div>
+</body>
+
+</html>

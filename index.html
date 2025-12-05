@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment grid</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 40px;
+        }
+        a {
+            text-decoration: none;
+            font-size: 25px;
+            padding:  20px;
+            
+        }
+        .container {
+            display: grid;
+            grid-template-columns:repeat(12,1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+        .box {
+            background: #ff9e80;
+            min-height: 60px;
+            padding: 25px;
+            font-size: 22px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .a {
+            grid-column: 1/13;
+        }
+
+        .b {
+            grid-column: 1/8;
+        }
+
+        .c {
+            grid-column: 8/13;
+        }
+
+        .d {
+            grid-column: 1/6;
+        }
+
+        .e {
+            grid-column: 6/13;
+        }
+
+        @media (max-width: 600px) {
+            .a, .b, .c, .d, .e{
+                grid-column: 1/13;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Desktop</h1>
+    <a href="task2.html">Task 2</a>
+    <div class="container">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+    </div>
+
+</body>
+
+</html>
